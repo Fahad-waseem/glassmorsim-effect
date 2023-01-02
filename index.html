@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <form action="" name="clac" class="calculator">
+            <input type="text" name="txt" class="value" readonly>
+            <span class="num clear" onclick="document.clac.txt.value =''">c</span>
+            <span class="num" onclick="document.clac.txt.value +='/'">/</span>
+            <span class="num" onclick="document.clac.txt.value +='*'">*</span>
+            <span class="num" onclick="document.clac.txt.value +='7'">7</span>
+            <span class="num" onclick="document.clac.txt.value +='8'">8</span>
+            <span class="num" onclick="document.clac.txt.value +='9'">9</span>
+            <span class="num" onclick="document.clac.txt.value +='-'">-</span>
+            <span class="num" onclick="document.clac.txt.value +='4'">4</span>
+            <span class="num" onclick="document.clac.txt.value +='5'">5</span>
+            <span class="num" onclick="document.clac.txt.value +='6'">6</span>
+            <span class="num plus" onclick="document.clac.txt.value +='+'">+</span>
+            <span class="num" onclick="document.clac.txt.value +='1'">1</span>
+            <span class="num" onclick="document.clac.txt.value +='2'">2</span>
+            <span class="num" onclick="document.clac.txt.value +='3'">3</span>
+            <span class="num" onclick="document.clac.txt.value +='3'">0</span>
+            <span class="num" onclick="document.clac.txt.value +='00'">00</span>
+            <span class="num" onclick="document.clac.txt.value +='.'">.</span>
+            <span class="num equla"  onclick="document.clac.txt.value =eval(clac.txt.value)">=</span>
+        </form>
+    </div>
+ 
+
+
+</script>
+<script type="text/javascript" src="vanilla-tilt.js"></script>
+<script type="text/javascript">
+	VanillaTilt.init(document.querySelector(".container"), {
+		max:15,
+    speed:400,
+    glare:true,
+    "max-glare":0.2,
+	});
+	
+</script>
+
+</body>
+</html>
